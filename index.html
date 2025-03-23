@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravya C - Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            color: #333;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            animation: slideDown 1s ease-in-out;
+        }
+
+        @keyframes slideDown {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(0); }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.5em;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideUp 1s ease-in-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h2 {
+            color: #6a11cb;
+            border-bottom: 2px solid #6a11cb;
+            padding-bottom: 10px;
+        }
+
+        .certificate img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .certificate img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: slideUp 1s ease-in-out;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #2575fc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #6a11cb;
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 5px solid #6a11cb;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sravya C</h1>
+        <p>B.Sc. Computer Science with Data Science</p>
+    </header>
+
+    <section id="profile">
+        <div class="profile-image">
+            <img src="html/image/resume.webp" alt="Profile Image">
+        </div>
+        <h2>Profile</h2>
+        <p><strong>SRAVYA.C</strong></p>
+        <p>B.Sc. Computer Science with Data Science</p>
+        <p>DRBCCC Hindu College, Pattabiram-72</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Phone:</strong> 7418631634</p>
+        <p><strong>Email:</strong> <a href="mailto:sravya74186@gmail.com">sravya74186@gmail.com</a></p>
+        <p><strong>Address:</strong> No. 21, Kalaignar Nagar, Thiruvallur Priyakuppam, 602001</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Madras University</strong></p>
+        <p>B.Sc. Computer Science with Data Science (Undergraduate)</p>
+        <p><strong>Bravershire College</strong> (2023-2026)</p>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <p>Native English, Tamil, Telugu</p>
+    </section>
+
+    <section id="skills">
+        <h2>Computer Skills</h2>
+        <ul>
+            <li>Typing Skills</li>
+            <li>MS Word</li>
+            <li>Slide Presentation</li>
+            <li>Data Analysis using Excel (Certificate from Great Learning)</li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Volunteer Experience</h2>
+        <p>Interested in Software Development</p>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificate">
+            <img src="html/image/certificate2.webp" alt="Data Analysis using Excel Certificate">
+            <p><strong>Data Analysis using Excel</strong> - Great Learning Academy (August 2024)</p>
+        </div>
+        <div class="certificate">
+            <img src="html/image/certificate1.webp" alt="Office 365 Web Apps Certificate">
+            <p><strong>Office 365 Web Apps</strong> - CPD Certified</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sravya C. All rights reserved.</p>
+    </footer>
+</body>
+</html>
